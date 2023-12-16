@@ -9,7 +9,8 @@ import io.cucumber.testng.CucumberOptions;
         monochrome = true,
         plugin = {"pretty", "html:target/site/cucumber-report-default.html", "json:target/site/cucumber.json"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@sort"
+        //tags = "@sort"
+        tags = "@Addtocart"
 )
 
 //@Test

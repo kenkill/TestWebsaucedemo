@@ -7,8 +7,7 @@ import pageObjects.LoginPageSort;
 import tests.cucumber.dataContext.TestContext;
 
 
-
-public class LoginPageSortStepDefinitions  {
+public class LoginPageSortStepDefinitions {
     LoginPageSort loginPageSort;
     TestContext testContext;
     ConfigReader configReader;

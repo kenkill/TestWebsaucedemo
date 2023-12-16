@@ -17,24 +17,25 @@ public class HomePageAddtocart {
     public void setGoToYourCartIcon(){goToYourCartIcon.click();}
 
 
-    public String setNameProduct(){
-         Element nameProduct = new Element(By.xpath("//div[text()='Sauce Labs Backpack']"));
-        nameProduct.getText();
-        return nameProduct.getText();
+    public String setNameProductHomepage(){
+         Element nameProductHomepage = new Element(By.xpath("//div[text()='Sauce Labs Backpack']"));
+        nameProductHomepage.getText();
+        return nameProductHomepage.getText();
     }
 
-    public String setTextProduct(){
-        Element textProduct = new Element(By.xpath("//div[@class='inventory_item_desc']"));
-        textProduct.getText();
-        return textProduct.getText();
+    public String setTextProductHomepage(){
+        Element textProductHomepage = new Element(By.xpath("//div[text()='Sauce Labs Backpack']//parent::a//following-sibling::div[@class='inventory_item_desc']"));
+        textProductHomepage.getText();
+        return textProductHomepage.getText();
+    }
+
+    public String setPriceProductHomepage(){
+        Element priceProductHomepage = new Element(By.xpath("//div[text()='Sauce Labs Backpack']//ancestor::div[@class='inventory_item_label']//following-sibling::div[@class='pricebar']//div[@class='inventory_item_price']"));
+        priceProductHomepage.getText().replace("$","");
+        return priceProductHomepage.getText().replace("$","");
     }
 
 
-    public String setpriceProduct(){
-        Element priceProduct = new Element(By.xpath("//div[@class='inventory_item_price']"));
-        priceProduct.getText();
-        return priceProduct.getText();
-    }
 
 
 }

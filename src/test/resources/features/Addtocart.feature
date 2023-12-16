@@ -9,3 +9,8 @@ Scenario: Verify Addtocart valid
     When addtocart
     And go to your cart
     Then product details will be display correctly
+    And click checkoutButton
+    Then input valid information
+    And click continue
+    And click finish
+    Then verify valid text complete
